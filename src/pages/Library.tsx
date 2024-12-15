@@ -1,12 +1,26 @@
+import { Container, Row, Col, Table } from 'react-bootstrap';
 
-import { Container, Typography } from '@mui/material'
-
-const Library = () => {
+export const Library = () => {
   return (
     <Container>
-      <Typography variant="h4">Library</Typography>
+      <Row className="my-4">
+        <Col>
+          <h2>Your Library</h2>
+          <Table striped hover>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Status</th>
+                <th>Progress</th>
+              </tr>
+            </thead>
+            <tbody>
+              {/* Add your library items */}
+            </tbody>
+          </Table>
+        </Col>
+      </Row>
     </Container>
-  )
-}
-
-export default Library
+  );
+};
